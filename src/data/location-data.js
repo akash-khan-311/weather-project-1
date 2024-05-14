@@ -46,6 +46,8 @@ function getLocationByName(location) {
       latitude: 0,
       longitude: 0,
     };
+    return defaultLocation;
   }
-  return defaultLocation;
 }
+
+export { getLocationByName, getLocations };

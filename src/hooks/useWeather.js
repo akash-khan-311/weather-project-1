@@ -19,6 +19,7 @@ const useWeather = () => {
     message: "",
   });
   const [error, setError] = useState(null);
+  
   const fetchWeatherData = async (latitude, longitde) => {
     try {
       setLoading({
