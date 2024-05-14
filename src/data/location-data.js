@@ -11,8 +11,8 @@ const data = [
   },
   {
     location: "Dhaka",
-    latitude: 23.777176,
-    longitude: 90.399452,
+    latitude: 23.810331,
+    longitude: 90.412521,
   },
   {
     location: "Singapore",

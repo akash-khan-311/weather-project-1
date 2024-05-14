@@ -11,29 +11,29 @@ import { getFormattedDate } from "../../../utils/dateUtils";
 const WeatherHeadline = () => {
   const { weatherData, loading } = useContext(WeatherContext);
   const { climate, location, time, temperature } = weatherData;
-  
-const getWeatherIcon = climate => {
-  switch (climate) {
-    case "Clouds":
-      return CloudIcon;
-    case "Haze":
-      return HazeIcon;
-    case "Fog":
-      return HazeIcon;
-    case "Mist":
-      return HazeIcon;
-    case "Snow":
-      return SnowIcon;
-    case "Clear":
-      return SunnyIcon;
-    case "Rain":
-      return RainIcon;
-    case "Thunder":
-      return ThunderIcon;
-    default:
-      return SunnyIcon;
-  }
-}
+
+  const getWeatherIcon = (climate) => {
+    switch (climate) {
+      case "Clouds":
+        return CloudIcon;
+      case "Haze":
+        return HazeIcon;
+      case "Fog":
+        return HazeIcon;
+      case "Mist":
+        return HazeIcon;
+      case "Snow":
+        return SnowIcon;
+      case "Clear":
+        return SunnyIcon;
+      case "Rain":
+        return RainIcon;
+      case "Thunder":
+        return ThunderIcon;
+      default:
+        return SunnyIcon;
+    }
+  };
 
   // if (loading) {
   //   return <p>Loading...</p>;
